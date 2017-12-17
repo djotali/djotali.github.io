@@ -1,360 +1,328 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Djotali | Envoyer facilement des messages à vos clients</title>
-    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet">
-    <link href="src/css/animate.css" rel="stylesheet" type="text/css"/>
-    <link href="src/css/style.css" rel="stylesheet" type="text/css"/>
-    <style type="text/css">
-        #anim-fs {
-            position: absolute;
-            height: 100%;
-            width: 100%
-        }
-    </style>
+    <meta charset="UTF-8">
+    <title>Jotali | Envoyer facilement des messages à vos clients</title>
+
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="assets/js/webfont.js"></script>
+    <script src="assets/js/fonts.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/icons.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/owl.carousel.css"/>
+    <!--<link rel="stylesheet" href="css/aos.css"/>-->
+    <link rel="stylesheet" href="assets/css/custom.css"/>
+    <link rel="stylesheet" href="assets/css/index.css"/>
+    <link rel="stylesheet" href="assets/css/preloader.css"/>
 </head>
-<body id="anim-fs">
-<div class="globload">
-    <div class="snaker animated fadeIn">
-        <div class="circle1"></div>
-        <div class="circle2"></div>
-        <div class="circle3"></div>
-        <div class="circle4"></div>
-        <div class="circle5"></div>
-        <div class="circle6"></div>
-        <h6>Chargement</h6>
+
+<body class="light-page">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loading-round-border"></div>
     </div>
-</div>
-<div id="map">
-    <div class="container">
-        <div class="col-xs-12 align-reduce"><a class="backoff">
-            <div class="reducing"><i class="fa fa-compress"></i></div>
-        </a></div>
-    </div>
-</div>
-<div id="pattern"></div>
-<h1 class="tlt">Bienvenue à Djotali</h1>
-<section id="main-future" class="opacity-0">
-    <div id="main-content">
-        <div class="principal container">
-            <h1 id="tit-main">Djotali</h1>
-            <span class="border"></span>
-            <h4>Notre histoire va commencer dans:</h4>
-            <div id="countdown_dashboard">
-                <div class="col-md-3 col-sm-3 col-xs-12 dash-glob">
-                    <div class="dash days_dash">
-                        <div class="digit">0</div>
-                        <div class="digit">0</div>
-                        <div class="digit">0</div>
-                        <span class="dash_title">Jours</span>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-3 col-xs-12 dash-glob">
-                    <div class="dash hours_dash">
-                        <div class="digit">0</div>
-                        <div class="digit">0</div>
-                        <span class="dash_title">Heures</span>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-3 col-xs-12 dash-glob">
-                    <div class="dash minutes_dash">
-                        <div class="digit">0</div>
-                        <div class="digit">0</div>
-                        <span class="dash_title">Minutes</span>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-3 col-xs-12 dash-glob">
-                    <div class="dash seconds_dash">
-                        <div class="digit">0</div>
-                        <div class="digit">0</div>
-                        <span class="dash_title">Secondes</span>
+
+    <!-- NAVIGATION MENU -->
+    <nav id="nav-center-logo-menu-btn" class="navbar dark navbar-fixed-top nav-start-hide-bg">
+        <div class="row-fluid no-pad">
+            <div class="col-md-2 text-left">
+                <div class="row">
+                    <div class="col-xs-6 col-md-12">
+                        <div class="navbar-brand">
+                            <a href="#header-center-carousel-single" class="smooth">
+                                <img src="assets/images/jotali.png" srcset="assets/images/jotali.png 2x" alt="Your logo"> </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="about-exp" class="well back-pop">
-            <a class="fa-comp about-exp_close">
-                <i class="fa fa-compress"></i>
-            </a>
-            <div class="container pop-container">
-                <div class="col-md-12 aboutus align-reduce">
-                    <h2>A propos</h2>
-                    <div class="border bor-spec"></div>
-                    <h5>Leave the world behind you</h5>
+            <div id="navbar" class="navbar-collapse collapse">
+                <div class="col-md-8 no-pad">
+                    <ul class="nav">
+                        <li><span><a href="#features" class="smooth">Fonctionnalit&eacute;s</a></span></li>
+                        <li><span><a href="#clients" class="smooth">Nos clients</a></span></li>
+                        <li><span><a href="#pricing" class="smooth">Nos tarifs</a></span></li>
+                        <!-- <li><span><a href="#">Support</a></span></li> -->
+                        <!-- <li><span><a href="#">D&eacute;veloppeurs</a></span></li> -->
+                        <li>
+                            <span>
+                                <a href="#contact" class="smooth">Contact</a>
+                            </span>
+                        </li>
+                    </ul>
                 </div>
+                <div class="col-md-2 text-md-right">
+                    <a href="#" class="btn-default btn btn-sm"> <span>Connexion</span>
+                        <i class="icon-ion-ios-play-outline icon-position-right"></i> </a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-bg"></div>
+    </nav>
+
+    <div id="wrap">
+
+        <!-- HERO SECTION -->
+        <section id="header-center-carousel-single" class="pt-100 pb-125 dark text-center">
+            <div class="carousel-single-nav owl-drag">
+                <div class="item container">
+                    <img src="assets/images/jotali.png" srcset="assets/images/jotali.png@2x.png 2x" alt="" class="screen mb-10">
+                    <h1 class="mb-50">vous rapproche de vos clients<br></h1>
+                    <h3 class="mb-50 compressed-box-50">Ne restez plus longtemps sans alerter vos clients de vos nouveaux
+                        produits ou de vos promotions. Impliquez les dans votre business.</h3>
+                    <!-- <p>
+                        <a class="btn-primary btn btn-lg"><span><strong>Cr&eacute;ez un compte</strong></span></a>
+                        <a class="single-iframe-popup btn-warning btn btn-lg"><span>Essayez le produit</span></a>
+                    </p> -->
+                </div>
+            </div>
+            <div class="bg"></div>
+            <div class="absolute-bottom-box bounce">
+                <a href="#features" class="icon-chevron-down icon-size-l icon-color mt-25 mb-25 smooth" target="_self"></a>
+            </div>
+        </section>
+
+        <!-- FEATURES SECTION -->
+        <section id="features" class="pt-125 bg-1-color-light text-center light">
+            <div class="container">
+                <h2><strong>Fonctionnalit&eacute;s</strong></h2>
+                <p class="compressed-box-50 mb-75">Nous vous procurons les principaux outils dont vous aurez besoin pour
+                    rester en contact avec votre monde.</p>
                 <div class="row">
-                    <div class="col-xs-12 col-md-6 col-lg-6 about-p">
-                        <h4>The essence of our inspiration</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere velit vel hendrerit
-                            facilisis. Quisque eu velit in nibh consectetur. Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Quisque posuere velit vel hendrerit facilisis. Quisque eu velit in nibh
-                            consectetur.
-                        </p>
-                        <h4>Some innovation and regeneration currently with future</h4>
-                        <p>
-                            Quisque sit amet dapibus leo. Sed faucibus tempus pulvinar. Mauris massa turpis, tristique
-                            vel elit sit amet, pretium congue odio. Vestibulum volutpat euismod tellus, non fermentum
-                            tortor. Maecenas euismod pharetra diam. Fusce feugiat velit non commodo semper. Integer non
-                            ante condimentum, viverra diam in, consequat arcu.
-                        </p>
+                    <div class="row">
+                        <div class="col-md-6 text-md-left">
+                            <div class="content-box space-more">
+                                <img src="assets/images/001-technology.svg" class="content-img" alt="">
+                                <h4>Templates</h4>
+                                <p>Envoyez des messages pour un &eacute;venement sp&eacute;cial. Ciblez les contacts de votre choix
+                                    à l'aide des campagnes. <a href="#" class="primary-link">En savoir plus
+                                        <i class="icon-chevron-right icon-size-s"></i></a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-md-left">
+                            <div class="content-box space-more">
+                                <img src="assets/images/007-envelope.svg" class="content-img" alt="">
+                                <h4>Campagnes</h4>
+                                <p>Envoyez des messages pour un &eacute;venement sp&eacute;cial. Ne ciblez que quelques
+                                    contacts à l'aide de nos campagnes. <a href="#" class="primary-link">En savoir plus
+                                        <i class="icon-chevron-right icon-size-s"></i></a></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-md-6 col-lg-6" id="img-about">
-                        <div class="carousel slide" id="carousel-services">
-                            <ol class="carousel-indicators">
-                                <li class="active" data-slide-to="0" data-target="#carousel-services"></li>
-                                <li data-slide-to="1" data-target="#carousel-services" class=""></li>
-                                <li data-slide-to="2" data-target="#carousel-services" class=""></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <div class="row text-box">
-                                        <div class="col-md-12">
-                                            <a href="src/img/slide1.jpg"
-                                               class="swipebox" title="My Caption">
-                                                <img src="src/img/slide1.jpg"
-                                                     alt="http://nos.twnsnd.co/image/81190207271"
-                                                     class="img-responsive"
-                                                     height="363" width="500"/>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="row text-box">
-                                        <div class="col-md-12">
-                                            <a href="src/img/slide2.jpg"
-                                               class="swipebox" title="My Caption">
-                                                <img src="src/img/slide2.jpg"
-                                                     alt="https://www.flickr.com/photos/needoptic/8194619272/sizes/k/in/set-72157626596081724/"
-                                                     class="img-responsive" height="363" width="500"/>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="row text-box">
-                                        <div class="col-md-12">
-                                            <a href="src/img/slide3.jpg"
-                                               class="swipebox" title="My Caption">
-                                                <img src="src/img/slide3.jpg"
-                                                     alt="https://www.flickr.com/photos/needoptic/6056804981/in/set-72157626596081724"
-                                                     class="img-responsive" height="363" width="500"/>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="row pt-50">
+                        <div class="col-md-6 text-md-left">
+                            <div class="content-box space-more">
+                                <img src="assets/images/002-bars-chart.svg" class="content-img" alt="">
+                                <h4>Statistiques</h4>
+                                <p>B&eacute;n&eacute;ficiez d'un tableau de bord avec des statistiques pertinents sur vos
+                                    campagnes, vos contacts, etc. <a href="#" class="primary-link">En savoir plus
+                                        <i class="icon-chevron-right icon-size-s"></i></a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-md-left">
+                            <div class="content-box space-more">
+                                <img src="assets/images/006-contact-book.svg" class="content-img" alt="">
+                                <h4>Contacts</h4>
+                                <p>Tous les contacts de vos clients sauvegard&eacute;s en un endroit. Ne recherchez plus,
+                                    selectionnez et contactez.<a href="#" class="primary-link">En savoir plus
+                                        <i class="icon-chevron-right icon-size-s"></i></a></p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="clearfix"></div>
             </div>
-        </div>
-        <div id="my_popup" class="well back-pop">
-            <a class="fa-comp my_popup_close">
-                <i class="fa fa-compress"></i>
-            </a>
-            <div class="container pop-container">
-                <div class="col-md-12 aboutus align-reduce">
-                    <h2>Contactez nous</h2>
-                    <div class="border bor-spec"></div>
-                    <h5>Vos question et commentaires sont importants pour nous.</h5>
+            <div class="bg"></div>
+        </section>
+
+        <!-- CLIENTS SECTION -->
+        <section id="clients" class="pt-125 pb-0 bg-1-color-light text-center light">
+            <div class="container mb-75">
+                <h2 class="mb-25"><strong>Ils nous font confiance</strong></h2>
+                
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="assets/images/003-grocery.svg" class="content-img" alt="">
+                        <h4 class="mt-10">Boutiques &amp; N&eacute;goces</h4>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/images/002-school.svg" class="content-img" alt="">
+                        <h4 class="mt-10">Ecoles &amp; Universit&eacute;s</h4>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/images/005-bank.svg" class="content-img" alt="">
+                        <h4 class="mt-10">Banques</h4>
+                    </div>
+                    <div class="col-md-3">
+                        <img class="img-circle" src="assets/images/rozumy.jpg" class="content-img" alt="">
+                        <h4 class="mt-10">Rozumy Couture</h4>
+                    </div>
                 </div>
-                <div class="row divide">
-                    <div class="contact-form">
-                        <form role="form" id="formcontactus" class="contactForm" method="post"
-                              action="http://www.themehelite.com/themeforest/future/assets/php/contact_me.php">
-                            <div class="col-xs-12 col-md-6 col-lg-6" id="main-cont">
-                                <div class="control-group">
-                                    <div class="controls">
-                                        <input type="text" class="form requiretop"
-                                               placeholder="Nom et Prénom" name="name">
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <div class="controls">
-                                        <input type="email" class="form email requiretop"
-                                               placeholder="Email" name="email">
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <div class="controls">
-                                        <input type="text" class="form requiretop"
-                                               placeholder="Objet" name="subject">
-                                    </div>
-                                </div>
+            </div>
+            <div class="container-fluid pt-50 pb-50 light" id="subscribe-field-text">
+                <div class="row flex-md-vmiddle">
+                    <div class="col-md-6 col-md-offset-1">
+                        <form action="./scripts/request.php" class="contact_form form-inline form-flex" novalidate="novalidate" id="subscribe-field-text-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Name" name="NAME"></div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your Email" name="EMAIL"></div>
+                            <button type="submit" data-loading-text="•••" data-complete-text="Completed!" data-reset-text="Try again later..." class="btn btn-primary">
+                                <span>Subscribe</span></button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <h3 class="mb-10">Demandez un <strong>devis</strong> d&egrave;s maintenant</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING SECTION -->
+        <section id="pricing" class="pt-100 pb-100 text-center light">
+            <div class="container">
+                <h2><strong>Nos tarifs</strong></h2>
+                <!-- <h4 class="mb-75">You are very important to us, all information received will always remain
+                    confidential.</h4> -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="price-box border-box bg-1-color-light light" data-aos="fade-right" data-aos-easing="none" data-aos-duration="500" data-aos-delay="0">
+                            <img src="assets/images/startup-icon.png" srcset="assets/images/startup-icon@2x.png 2x" alt="Price" class="mb-25 mt-10">
+                            <h4 class="mb-0">Trial</h4>
+                            <h2 class="mb-0"><strong>FREE</strong></h2>
+                            <p class="small desc-text mb-30">for just 1 month</p>
+                            <p class="mb-40">
+                                Fully Responsive<br> Clean Design<br> Great Flexibility<br> Free Support </p>
+                            <a href="#" class="btn btn-default btn-block"><span>Try now</span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="price-box border-box bg-1-color-light light" data-aos="fade-up" data-aos-easing="none" data-aos-duration="500" data-aos-delay="0">
+                            <div class="stamp-mid">
+                                <img src="assets/images/stamp-best-round@2x.png" srcset="assets/images/stamp-best-round@2x.png 2x" alt="best for beginners">
                             </div>
-                            <div class="col-xs-12 col-md-6 col-lg-6" id="text-cont">
-                                <div class="control-group">
-                                    <div class="controls">
-                                        <textarea rows="10" class="form textarea requiretop"
-                                                  placeholder="Message" name="message"
-                                                  style="resize:none">
-                                        </textarea>
-                                    </div>
-                                </div>
+                            <img src="assets/images/online-shop-icon.png" srcset="assets/images/online-shop-icon@2x.png 2x" alt="Price" class="mb-30 mt-20">
+                            <h4 class="mb-0">Standard</h4>
+                            <h2 class="mb-0">
+                                <strong>$9.99</strong>
+                            </h2>
+                            <p class="small desc-text mb-30">per month</p>
+                            <p class="mb-40">
+                                Fully Responsive<br> Clean Design<br> Great Flexibility<br> Free Support </p>
+                            <a href="#" class="btn btn-primary btn-block"><span>Buy now</span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="price-box border-box bg-1-color-light light" data-aos="fade-left" data-aos-easing="none" data-aos-duration="500" data-aos-delay="0">
+                            <img src="assets/images/safebox-icon.png" srcset="assets/images/safebox-icon@2x.png 2x" alt="Price" class="mb-30 mt-20">
+                            <h4 class="mb-0">Platinum</h4>
+                            <h2 class="mb-0"><strong>$16.99</strong></h2>
+                            <p class="small desc-text mb-30">per month</p>
+                            <p class="mb-40">
+                                Fully Responsive<br> Clean Design<br> Great Flexibility<br> Free Support </p>
+                            <a href="#" class="btn btn-primary btn-block"><span>Buy now</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg"></div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer id="contact" class="dark pt-100 pb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <h4><strong>A propos</strong></h4>
+                                <p>Jotali est un service de sms/email marketing. Il vous facilite la communication avec vos
+                                    clients, vos &eacute;l&egrave;ves, vos patients, etc. Nous y mettons &agrave; votre
+                                    disposition tout un tas d'outils pour vous rapprocher d'eux.</p>
                             </div>
-                            <div class="relative fullwidth col-xs-12 col-md-12">
-                                <button type="submit" class="btn btn-lg form-btn">Envoyer</button>
+                            <div class="col-sm-4">
+                                <h4><strong>En savoir plus</strong></h4>
+                                <ul class="text-list">
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Foire aux questions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">D&eacute;veloppeurs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms of Service</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Politique de confidentialit&eacute;</a>
+                                    </li>
+                                </ul>
                             </div>
+                            <div class="col-sm-3">
+                                <h4><strong>Social</strong></h4>
+                                <ul class="text-list">
+                                    <li>
+                                        <i class="icon-facebook icon-position-left"></i><span><a href="#">Facebook</a></span>
+                                    </li>
+                                    <li>
+                                        <i class="icon-twitter icon-position-left"></i><span><a href="#">Twitter</a></span>
+                                    </li>
+                                    <li>
+                                        <i class="icon-instagram icon-position-left"></i><span><a href="#">Instagram</a></span>
+                                    </li>
+                                    <li>
+                                        <i class="icon-linkedin icon-position-left"></i><span><a href="#">Linkedin</a></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h4><strong>Contact</strong></h4>
+                        <form action="https://formspree.io/contact@djotali.com" class="contact_form" id="footer-list-form-form" method="POST">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Full name" name="name"></div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email Address" name="_replyto"></div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Your message or question" rows="4" name="message"></textarea>
+                            </div>
+                            <input type="hidden" name="_next" value="//localhost:8000">
+                            <input type="hidden" name="_language" value="fr" />
+                            <button type="submit" data-loading-text="•••" data-complete-text="Completed!" data-reset-text="Try again later..." class="btn btn-block btn-primary">
+                                <span>Ask</span></button>
                         </form>
                     </div>
                 </div>
-                <div class="row moreinfo cont-icon">
-                    <div class="col-md-4">
-                        <i class="fa fa-map-marker fa-2x"></i>
-                        <h6>Rencontre nous</h6>
-                        <div class="lil-border"></div>
-                        <p>28, Rue du Nord @ Luxembourg</p></div>
-                    <div class="col-md-4">
-                        <i class="fa fa-phone fa-2x"></i>
-                        <h6>Appelez-nous</h6>
-                        <div class="lil-border"></div>
-                        <p>(+33) 987 634 99</p></div>
-                    <div class="col-md-4">
-                        <i class="fa fa-envelope fa-2x"></i>
-                        <h6>Envoyez nous un mail</h6>
-                        <div class="lil-border"></div>
-                        <a href='mailto:heyrapture@awesome.com'>heyrapture@awesome.com</a>
+                <hr class="mt-50 mb-50">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2017 Touts droits r&eacute;serv&eacute;s. Jotali &reg; est une marque d&eacute;pos&eacute;e de
+                            Botilab.</p>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="bg"></div>
+        </footer>
     </div>
-    <div class="link-box">
-        <a data-toggle="tooltip" data-placement="top" data-title="A propos" data-trigger="hover"
-           class="about-exp_open book" id="about-anim" href="#about-exp_wrapper">
-            <i class="fa fa-book"></i>
-        </a>
-        <a data-toggle="tooltip" data-placement="top" data-title="Localisez nous" data-trigger="hover" id="supramap"
-           class="globe">
-            <i class="fa fa-globe"></i>
-        </a>
-        <a data-toggle="tooltip" data-placement="top" data-title="Contactez nous" data-trigger="hover"
-           class="my_popup_open envelope" id="contact-anim" href="#my_popup">
-            <i class="fa fa-envelope"></i>
-        </a>
-        <a data-toggle="tooltip" data-placement="top" data-title="Newsletter" data-trigger="hover" href="#"
-           id="newsletter">
-            <i class="fa fa-bell"></i>
-        </a>
-        <a data-toggle="tooltip" data-placement="top" data-title="Facebook" data-trigger="hover" href="#"
-           class="facebook">
-            <i class="fa fa-facebook"></i>
-        </a>
-        <a data-toggle="tooltip" data-placement="top" data-title="Twitter" data-trigger="hover" href="#"
-           class="twitter">
-            <i class="fa fa-twitter"></i>
-        </a>
-        <a data-toggle="tooltip" data-placement="top" data-title="Google+" data-trigger="hover" href="#"
-           class="google-plus">
-            <i class="fa fa-google-plus"></i>
-        </a>
-    </div>
-</section>
-<div id="progress2" class="opacity-0">
-    <div class="percent"></div>
-    <div class="pbar"></div>
-</div>
-<div class="container">
-    <div id="subscribe">
-        <form method="POST" id="notifyMe"
-              action="http://www.themehelite.com/themeforest/future/assets/php/notify-me.php">
-            <div class="form-group">
-                <div class="controls">
-                    <input type="text" id="mail-sub" name="email"
-                           placeholder="Écrivez votre email et restez à l'écoute!"
-                           class="form-control email srequiredField">
-                </div>
-            </div>
-            <button class="btn btn-lg submit">S'abonner</button>
-        </form>
-    </div>
-</div>
-<div class="container">
-    <div id="close-map">
-        <a id="close-map-top" class="fa-close-map">
-            <i class="fa fa-angle-double-up"></i>
-        </a>
-    </div>
-</div>
-<audio id="beep-two" preload="auto">
-    <source src="src/sounds/glass-tone.mp3"/>
-</audio>
-<script type="text/javascript" src="src/js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="src/js/bootstrap.min.js"></script>
-<script type="text/javascript"
-        src="src/js/jquery.lwtCountdown-1.0.js"></script>
-<script type="text/javascript" src="src/js/jquery.vegas.js"></script>
-<script type="text/javascript" src="src/js/jquery.popupoverlay.js"></script>
-<script type="text/javascript" src="src/js/jquery.swipebox.js"></script>
-<script type="text/javascript" src="src/js/fss.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyCmY5gLZ--X_K1mRPNlxawEnjz_4Qs3fR0"></script>
-<script type="text/javascript" src="src/js/contact_me.js"></script>
-<script type="text/javascript"
-        src="src/js/jquery-ui-1.8.16.custom.min.js"></script>
-<script type="text/javascript" src="src/js/script.js"></script>
-<script type="text/javascript" src="src/js/notifyMe.js"></script>
-<script type="text/javascript" src="src/js/jquery.lettering.js"></script>
-<script type="text/javascript" src="src/js/jquery.textillate.js"></script>
-<script type="text/javascript" src="src/js/future.js"></script>
-<script>
-    topcontainer = document.getElementById('anim-fs');
-    renderer = new FSS.CanvasRenderer();
-    scene = new FSS.Scene();
-    light = new FSS.Light('#0d2656', '#fc000f');
-    geometry = new FSS.Plane(topcontainer.offsetWidth, topcontainer.offsetHeight, 18, 12);
-    material = new FSS.Material('#ffffff', '#ffffff');
-    mesh = new FSS.Mesh(geometry, material);
-    now = Date.now();
-    start = Date.now();
 
-    function initialise() {
-        scene.add(mesh);
-        scene.add(light);
-        topcontainer.appendChild(renderer.element);
-        window.addEventListener('resize', resize);
-    }
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <!--<script src="js/jquery.magnific-popup.min.js"></script>-->
+    <script src="assets/js/jquery.smooth-scroll.min.js"></script>
+    <script src="assets/js/skrollr.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/index.js"></script>
 
-    function resize() {
-        renderer.setSize(topcontainer.offsetWidth, topcontainer.offsetHeight);
-    }
-
-    function animate() {
-        now = Date.now() - start;
-        light.setPosition(300 * Math.sin(now * 0.001), 150 * Math.cos(now * 0.0005), 150);
-        renderer.render(scene);
-        requestAnimationFrame(animate);
-    }
-
-    initialise();
-    resize();
-    animate();
-</script>
-<script>
-    (function ($) {
-        $('.swipebox').swipebox();
-    })(jQuery);
-</script>
-<script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-xxxxx-xxxx', 'auto');
-    ga('send', 'pageview');</script>
 </body>
+
 </html>
